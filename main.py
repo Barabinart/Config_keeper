@@ -6,7 +6,7 @@ from sqlalchemy.orm import sessionmaker
 from datetime import datetime
 
 # Подключение к базе данных
-DATABASE_URL = "sqlite:///./configurations.db"
+DATABASE_URL = "sqlite:///./bd/configurations.db"
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
